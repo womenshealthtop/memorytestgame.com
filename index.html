@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Memory Boost</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="main-container">
+    <header class="main-header">
+      <h1>Memory Boost</h1>
+      <p class="subtitle">Train your memory with exciting challenges!</p>
+    </header>
+    <main class="main-content">
+      <section class="game-intro">
+        <h2>How to Play</h2>
+        <ul class="rules">
+          <li>Flip cards to reveal hidden shapes and patterns.</li>
+          <li>Match two identical cards to clear them.</li>
+          <li>Complete all matches within the time limit to win!</li>
+        </ul>
+      </section>
+      <button class="start-btn" id="start-game">Start Game</button>
+    </main>
+    <footer class="main-footer">
+      <p>&copy; 2024 Memory Boost. All rights reserved.</p>
+    </footer>
+  </div>
+  <script>
+    document.getElementById('start-game').addEventListener('click', () => {
+      window.location.href = 'game.html'; // 跳转到游戏界面
+    });
+  </script>
+</body>
+</html>
