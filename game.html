@@ -1,29 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Memory Boost - Game</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div class="game-container">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="The best memory test game to train your memory skills and challenge your levels. Suitable for all ages.">
+    <meta name="keywords" content="memory test game,memory training,brain games">
+    <meta name="author" content="Game Developer">
+
+    <!-- Open Graph Meta Tags for Social Sharing -->
+    <meta property="og:title" content="Best Memory Test Game">
+    <meta property="og:description" content="Train your memory skills and challenge yourself with this engaging memory test game. Suitable for all ages.">
+    <meta property="og:image" content="icon-512.png">
+    <meta property="og:url" content="https://memorytestgame.com">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Best Memory Test Game">
+    <meta name="twitter:description" content="Train your memory skills and challenge yourself with this engaging memory test game. Suitable for all ages.">
+    <meta name="twitter:image" content="icon-512.png">
+
+    <!-- Favicon and Web Manifest -->
+    <link rel="icon" href="icon-192.png" type="image/png">
+    <link rel="manifest" href="appmanifest.json" />
+
+    <!-- Title -->
+    <title>Memory Test Game - Train Your Brain Online</title>
+
+    <!-- CSS Styles -->
+    <style>
+        body { 
+            background-color: black; 
+            color: white; 
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            text-align: center;
+            padding: 50px;
+            background: rgba(0, 0, 0, 0.7);
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+        header p {
+            font-size: 1.2rem;
+            margin: 10px 0 0;
+        }
+        canvas { -ms-touch-action: none; }
+        #c2canvasdiv {
+            margin: 0 auto;
+            width: 100%;
+            max-width: 1280px;
+            height: auto;
+        }
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+            header p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head> 
+
+<body> 
     <header>
-      <h1>Memory Boost</h1>
-      <div class="stats">
-        <p id="level">Level: 1</p>
-        <p id="score">Score: 0</p>
-        <p id="timer">Time: 30s</p>
-      </div>
+        <h1>Memory Test Game - Challenge Your Brain</h1>
+        <p>This is a simple and fun memory test game, suitable for players of all ages.</p>
     </header>
-    <main class="game-board">
-      <!-- 卡片动态生成 -->
-    </main>
-    <footer>
-      <button id="restart-btn">Restart</button>
-      <button id="home-btn">Home</button>
-    </footer>
-  </div>
-  <script src="script.js"></script>
-</body>
+
+    <div id="fb-root"></div>
+    <div style="text-align: center;">
+        <div id="c2canvasdiv">
+            <canvas id="c2canvas" width="1280" height="720"></canvas>
+        </div>
+        <br />
+    </div>
+
+    <!-- Scripts -->
+    <script src="jquery-2.1.1.min.js"></script>
+    <script src="c2runtime.js"></script>
+    <script>
+        // Responsive canvas
+        window.addEventListener('resize', () => {
+            cr_sizeCanvas(window.innerWidth, window.innerHeight);
+        });
+
+        // Start Construct 2 project
+        jQuery(document).ready(() => {
+            cr_createRuntime("c2canvas");
+        });
+
+        // Handle visibility changes
+        function onVisibilityChanged() {
+            if (document.hidden) cr_setSuspended(true);
+            else cr_setSuspended(false);
+        }
+        document.addEventListener("visibilitychange", onVisibilityChanged);
+
+        // Register Service Worker
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('sw.js')
+                .then(() => console.log('Service Worker registered successfully!'))
+                .catch(err => console.log('Service Worker registration failed:', err));
+        }
+    </script>
+</body> 
 </html>
