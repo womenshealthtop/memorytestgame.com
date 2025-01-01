@@ -51,12 +51,14 @@
             font-size: 1.2rem;
             margin: 10px 0 0;
         }
-        canvas { -ms-touch-action: none; }
+        canvas { -ms-touch-action: none; display: block; }
         #c2canvasdiv {
             margin: 0 auto;
             width: 100%;
-            max-width: 1280px;
-            height: auto;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
         @media (max-width: 768px) {
             header h1 {
@@ -76,11 +78,8 @@
     </header>
 
     <div id="fb-root"></div>
-    <div style="text-align: center;">
-        <div id="c2canvasdiv">
-            <canvas id="c2canvas" width="1280" height="720"></canvas>
-        </div>
-        <br />
+    <div id="c2canvasdiv">
+        <canvas id="c2canvas" width="1280" height="720"></canvas>
     </div>
 
     <!-- Scripts -->
@@ -88,9 +87,14 @@
     <script src="c2runtime.js"></script>
     <script>
         // Responsive canvas
-        window.addEventListener('resize', () => {
-            cr_sizeCanvas(window.innerWidth, window.innerHeight);
-        });
+        function resizeCanvas() {
+            const canvas = document.getElementById('c2canvas');
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        }
+
+        window.addEventListener('resize', resizeCanvas);
+        resizeCanvas();
 
         // Start Construct 2 project
         jQuery(document).ready(() => {
