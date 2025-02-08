@@ -1,5 +1,5 @@
 User-agent: *
 Allow: /
 Crawl-delay: 120
-Sitemap: https://memorytestgame.com/sitemap.xml
+Sitemap: https://memorytestgame.com/sitemap/rss.xml
 Disallow: /cgi-bin/
