@@ -1,7 +1,7 @@
 $(function () {
     // initialize the number grid with 9 images
     for (var i=1; i<=9; i++) {
-        $('#'+i).css('background-image', 'url("./images/normal'+i+'.jpg")');
+        $('#'+i).css('background-image', 'url("./numbermemorytest/images/normal'+i+'.jpg")');
     }
 
     // hiding the overlays initially
@@ -9,7 +9,7 @@ $(function () {
     $('#giveup-overlay').css("display","none");
 
     // sound object
-    var successSound = new Audio("./sound/success.mp3");
+    var successSound = new Audio("./numbermemorytest/sound/success.mp3");
 
     // total guesses
     var totalGuesses = 0;
@@ -95,10 +95,10 @@ $(function () {
             }
     
             else {
-                $('#'+random_number).css( 'background-image', 'url(./images/down'+random_number+'.jpg)' ).addClass('clicked');
+                $('#'+random_number).css( 'background-image', 'url(./numbermemorytest/images/down'+random_number+'.jpg)' ).addClass('clicked');
                 pattern_array.push(random_number);
                 var normalButton = setTimeout(() => {
-                    $('#'+random_number).css( 'background-image', 'url(./images/normal'+random_number+'.jpg)' ).removeClass('clicked');
+                    $('#'+random_number).css( 'background-image', 'url(./numbermemorytest/images/normal'+random_number+'.jpg)' ).removeClass('clicked');
                 }, 500);
                 break;
             }
@@ -143,9 +143,9 @@ $(function () {
 
     function animate(id){
         return new Promise((resolve, reject) => {
-            $('#'+id).css( 'background-image', 'url(./images/down'+id+'.jpg)' ).addClass('clicked');
+            $('#'+id).css( 'background-image', 'url(./numbermemorytest/images/down'+id+'.jpg)' ).addClass('clicked');
             var normalButton = setTimeout(() => {
-                $('#'+id).css( 'background-image', 'url(./images/normal'+id+'.jpg)' ).removeClass('clicked');
+                $('#'+id).css( 'background-image', 'url(./numbermemorytest/images/normal'+id+'.jpg)' ).removeClass('clicked');
                 resolve('Animation done');
             }, 100);
         })
