@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test de Mémoire des Nombres - Améliorez votre Mémoire</title>
+    <meta name="description" content="Testez et améliorez votre mémoire des nombres avec ce jeu interactif. Relevez le défi et atteignez des niveaux plus élevés !">
+    <meta name="keywords" content="Test de Mémoire des Nombres, Jeu de Mémoire, Entraînement Cérébral, Compétences Cognitives, Défi de Mémoire">
+    <meta name="author" content="YourWebsiteName">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="../numbermemorytest/styles.css">
+    <link rel="shortcut icon" href="#">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3148350038470800"
+     crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <header>
+        <h1>Test de Mémoire des Nombres</h1>
+        <p class="subtitle">Quelle est la qualité de votre mémoire ? Testez-la maintenant !</p>
+    </header>
+
+    <section class="game-intro">
+        <h2>Comment Jouer</h2>
+        <p>1️⃣ Une séquence de nombres apparaîtra brièvement à l'écran.</p>
+        <p>2️⃣ Votre tâche est de mémoriser les nombres dans le bon ordre.</p>
+        <p>3️⃣ Une fois les nombres disparus, vous devez cliquer sur les cases dans le bon ordre.</p>
+        <p>4️⃣ Si vous avez juste, vous passez au niveau suivant et le défi devient plus difficile !</p>
+        <p>🔹 Plus le niveau est élevé, plus la séquence de nombres est longue. Jusqu'où pouvez-vous aller ?</p>
+    </section>
+
+    <div class="playing-area">
+        <h2>Relevez le Défi</h2>
+        <p id="remarks">Cliquez sur les cases dans le bon ordre !</p>
+
+        <div class="main-container">
+            <div class="item" id="1"></div>
+            <div class="item" id="2"></div>
+            <div class="item" id="3"></div>
+            <div class="item" id="4"></div>
+            <div class="item" id="5"></div>
+            <div class="item" id="6"></div>
+            <div class="item" id="7"></div>
+            <div class="item" id="8"></div>
+            <div class="item" id="9"></div>
+        </div>
+
+        <div class="bottom-text">
+            <p>Niveau : <span id="level">3</span></p>
+            <button id="giveup-btn">Abandonner</button>
+        </div>
+    </div>
+
+    <div id="overlay">
+        <h1>Jeu Terminé !</h1>
+        <p>Vous avez atteint le niveau : <strong id="score"></strong></p>
+        <button id="try-again">Réessayer</button>
+    </div>
+
+    <div id="giveup-overlay">
+        <p>Vous avez atteint le niveau <span id="current_score"></span>. Votre meilleur score précédent était <strong id="best_score"></strong></p>
+    </div>
+
+    <script src="../numbermemorytest/code.js"></script>
+</body>
+</html>

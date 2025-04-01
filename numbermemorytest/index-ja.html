@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>数字記憶テスト - 記憶力を向上させよう</title>
+    <meta name="description" content="このインタラクティブな数字記憶テストゲームで、あなたの数字記憶力をテストし、向上させましょう。自分に挑戦して、より高いレベルを目指そう！">
+    <meta name="keywords" content="数字記憶テスト, 記憶ゲーム, 脳トレ, 認知スキル, 記憶力チャレンジ">
+    <meta name="author" content="YourWebsiteName">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="../numbermemorytest/styles.css">
+    <link rel="shortcut icon" href="#">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3148350038470800"
+     crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <header>
+        <h1>数字記憶テスト</h1>
+        <p class="subtitle">あなたの記憶力はどのくらい？今すぐテストしてみよう！</p>
+    </header>
+
+    <section class="game-intro">
+        <h2>遊び方</h2>
+        <p>1️⃣ 画面に短時間、数字の並びが表示されます。</p>
+        <p>2️⃣ あなたのタスクは、正しい順番で数字を記憶することです。</p>
+        <p>3️⃣ 数字が消えた後、正しい順番でボックスをクリックしてください。</p>
+        <p>4️⃣ 正解すると次のレベルに進み、難易度が上がります！</p>
+        <p>🔹 レベルが上がるほど、数字の並びが長くなります。どこまで行けるかな？</p>
+    </section>
+
+    <div class="playing-area">
+        <h2>チャレンジを開始</h2>
+        <p id="remarks">正しい順番でボックスをクリックしよう！</p>
+
+        <div class="main-container">
+            <div class="item" id="1"></div>
+            <div class="item" id="2"></div>
+            <div class="item" id="3"></div>
+            <div class="item" id="4"></div>
+            <div class="item" id="5"></div>
+            <div class="item" id="6"></div>
+            <div class="item" id="7"></div>
+            <div class="item" id="8"></div>
+            <div class="item" id="9"></div>
+        </div>
+
+        <div class="bottom-text">
+            <p>レベル: <span id="level">3</span></p>
+            <button id="giveup-btn">ギブアップ</button>
+        </div>
+    </div>
+
+    <div id="overlay">
+        <h1>ゲームオーバー！</h1>
+        <p>あなたはレベル <strong id="score"></strong> に到達しました。</p>
+        <button id="try-again">もう一度挑戦</button>
+    </div>
+
+    <div id="giveup-overlay">
+        <p>あなたはレベル <span id="current_score"></span> に到達しました。あなたの過去最高スコアは <strong id="best_score"></strong> でした。</p>
+    </div>
+
+    <script src="../numbermemorytest/code.js"></script>
+</body>
+</html>
