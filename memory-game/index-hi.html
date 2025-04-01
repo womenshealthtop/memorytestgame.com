@@ -1,0 +1,96 @@
+<!DOCTYPE html> 
+<html manifest="offline.appcache">
+<head>
+    <meta charset="UTF-8" />
+    
+    <!-- यह सुनिश्चित करता है कि कैनवास IE9+ पर काम करता है। इसे हटाएं नहीं! -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    
+    <!-- मानक वेब एप्लिकेशन मैनिफेस्ट -->
+    <link rel="manifest" href="appmanifest.json" />
+    
+    <title>मेमोरी गेम - बच्चों और वयस्कों के लिए फ्री ऑनलाइन मेमोरी गेम्स | MemoryTestGame</title>
+
+    <meta name="description" content="MemoryTestGame पर ऑनलाइन मुफ्त मेमोरी गेम खेलें। बच्चों और वयस्कों के लिए मजेदार और आकर्षक मेमोरी गेम्स के साथ अपने मस्तिष्क की शक्ति को सुधारें। आज ही अपनी मेमोरी और एकाग्रता कौशल का अभ्यास करें!" />
+    
+    <!-- SEO के लिए कीवर्ड्स -->
+    <meta name="keywords" content="मेमोरी गेम, ऑनलाइन मेमोरी गेम, फ्री मेमोरी गेम्स, बच्चों के लिए मेमोरी गेम्स, मेमोरी टेस्ट, मस्तिष्क गेम्स, बच्चों के मेमोरी गेम्स, ऑनलाइन मेमोरी गेम्स, फ्री मेमोरी गेम">
+
+    <!-- सोशल शेयरिंग के लिए Open Graph मेटा टैग्स -->
+    <meta property="og:title" content="मेमोरी गेम - बच्चों और वयस्कों के लिए फ्री ऑनलाइन मेमोरी गेम्स | MemoryTestGame">
+    <meta property="og:description" content="MemoryTestGame पर ऑनलाइन मुफ्त मेमोरी गेम खेलें। बच्चों और वयस्कों के लिए मजेदार और आकर्षक मेमोरी गेम्स के साथ अपने मस्तिष्क की शक्ति को सुधारें। आज ही अपनी मेमोरी और एकाग्रता कौशल का अभ्यास करें!">
+    <meta property="og:image" content="path_to_image.jpg"> <!-- अपनी इमेज का पथ जोड़ें -->
+    <meta property="og:url" content="https://memorytestgame.com/memory-game">
+    
+    <style type="text/css">
+        body { background-color: black; color: white; }
+        canvas { -ms-touch-action: none; }
+    </style>
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KW8FHBMW');</script>
+<!-- Google Tag Manager का अंत --><!-- Google टैग (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-X8MZQ3KM0T"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-X8MZQ3KM0T');
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3148350038470800"
+     crossorigin="anonymous"></script>
+</head> 
+
+<body> 
+    <div id="fb-root"></div>
+    <div style="text-align: center;">
+        <h1>फ्री मेमोरी गेम ऑनलाइन</h1>
+        <p>MemoryTestGame पर स्वागत है! सबसे अच्छे मेमोरी गेम्स ऑनलाइन मुफ्त में खेलें। चाहे आप बच्चें हों या वयस्क, मजेदार मेमोरी चैलेंजेस के साथ अपनी मस्तिष्क शक्ति और एकाग्रता को सुधारें।</p>
+        
+        <!-- कैनवास को c2canvasdiv नामक एक div के अंदर होना चाहिए -->
+        <div id="c2canvasdiv" style="margin: 0 auto; width: 1280px; height: 720px;">
+            <!-- वह कैनवास जिस पर प्रोजेक्ट रेंडर होगा -->
+            <canvas id="c2canvas" width="1280" height="720"></canvas>
+        </div>
+
+        <p>अपने आप को चुनौती दें या दोस्तों के साथ प्रतिस्पर्धा करें, सभी उम्र के लिए डिज़ाइन किए गए मेमोरी गेम्स में। अभी खेलना शुरू करें और अपनी मेमोरी कौशल को सुधारें!</p>
+
+        <br />
+    </div>
+    
+    <!-- पृष्ठ नीचे स्क्रिप्ट के साथ तेज़ी से लोड होते हैं -->
+    
+    <script src="jquery-2.1.1.min.js"></script>
+    <script src="c2runtime.js"></script>
+
+    <script>
+        jQuery(window).resize(function() {
+            cr_sizeCanvas(jQuery(window).width(), jQuery(window).height());
+        });
+        
+        jQuery(document).ready(function () {
+            cr_createRuntime("c2canvas");
+        });
+        
+        function onVisibilityChanged() {
+            if (document.hidden || document.mozHidden || document.webkitHidden || document.msHidden)
+                cr_setSuspended(true);
+            else
+                cr_setSuspended(false);
+        };
+        
+        document.addEventListener("visibilitychange", onVisibilityChanged, false);
+        document.addEventListener("mozvisibilitychange", onVisibilityChanged, false);
+        document.addEventListener("webkitvisibilitychange", onVisibilityChanged, false);
+        document.addEventListener("msvisibilitychange", onVisibilityChanged, false);
+        
+        if (navigator.serviceWorker && navigator.serviceWorker.register) {
+            navigator.serviceWorker.register("sw.js", { scope: "./" });
+        }
+    </script>
+</body> 
+</html>
