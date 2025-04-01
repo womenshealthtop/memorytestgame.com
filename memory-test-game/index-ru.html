@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html manifest="offline.appcache">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    
+    <title>Игра на проверку памяти - Улучши свою память и концентрацию</title>
+    <meta name="description" content="Игра на проверку памяти, которая поможет улучшить память и когнитивные навыки. Испытай себя на разных уровнях сложности и улучшай концентрацию." />
+    <meta name="keywords" content="игра на проверку памяти, тренировка мозга, когнитивные навыки, улучшение памяти, игры для концентрации, умственные упражнения" />
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph для социальных сетей -->
+    <meta property="og:title" content="Игра на проверку памяти - Улучши свою память и концентрацию" />
+    <meta property="og:description" content="Проверь и улучшай свою память с помощью этой увлекательной игры на проверку памяти. Играй, чтобы испытать свой мозг и повысить концентрацию." />
+    <meta property="og:image" content="path_to_image.jpg" />
+    <meta property="og:url" content="http://memorytestgame.com/game.html" />
+
+    <meta name="twitter:title" content="Игра на проверку памяти - Улучши свою память и концентрацию" />
+    <meta name="twitter:description" content="Прими участие в увлекательной и сложной игре на проверку памяти, которая улучшит твои когнитивные навыки и память." />
+    <meta name="twitter:image" content="path_to_image.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <style type="text/css">
+        body { 
+            background-color: black; 
+            color: white; 
+            font-family: Arial, sans-serif; 
+            margin: 0;
+            padding: 0;
+        }
+        canvas { 
+            display: block; 
+            margin: 0 auto; 
+            -ms-touch-action: none;
+        }
+        h1 {
+            font-size: 2em;
+            margin: 20px 0;
+        }
+        p {
+            font-size: 1.2em;
+        }
+
+        /* Адаптивный дизайн */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.5em;
+            }
+            p {
+                font-size: 1em;
+            }
+            #c2canvasdiv {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3148350038470800"
+     crossorigin="anonymous"></script>
+</head>
+
+<body> 
+    <div id="fb-root"></div>
+    <div style="text-align: center;">
+        <h1>Игра на проверку памяти</h1>
+        <p>Добро пожаловать в <strong>Игру на проверку памяти</strong>. Испытай себя и улучшай свою память и концентрацию с помощью этой интерактивной игры. Начни играть прямо сейчас!</p>
+    
+        <script>
+            // Показать предупреждение, если пытаешься просмотреть экспортированный проект на диске.
+            (function() {
+                if (window.location.protocol.substr(0, 4) === "file") {
+                    alert("Экспортированные игры не будут работать, пока вы не загрузите их. (При работе через файл:/// протокол браузеры блокируют многие функции по соображениям безопасности.)");
+                }
+            })();
+        </script>
+
+        <div id="c2canvasdiv" style="width: 100%; height: 100%; max-width: 1280px; max-height: 720px; margin: 0 auto;">
+            <canvas id="c2canvas" width="1280" height="720"></canvas>
+        </div>
+
+        <br />
+    </div>
+
+    <script src="jquery-2.1.1.min.js"></script>
+    <script src="c2runtime.js"></script>
+    <script>
+        // Обеспечение кроссбраузерной совместимости при изменении размера канваса
+        jQuery(window).resize(function() {
+            cr_sizeCanvas(jQuery(window).width(), jQuery(window).height());
+        });
+
+        jQuery(document).ready(function () {
+            cr_createRuntime("c2canvas");
+        });
+
+        // События изменения видимости для разных браузеров
+        function onVisibilityChanged() {
+            if (document.hidden || document.mozHidden || document.webkitHidden || document.msHidden) {
+                cr_setSuspended(true);
+            } else {
+                cr_setSuspended(false);
+            }
+        }
+
+        document.addEventListener("visibilitychange", onVisibilityChanged, false);
+        document.addEventListener("mozvisibilitychange", onVisibilityChanged, false);
+        document.addEventListener("webkitvisibilitychange", onVisibilityChanged, false);
+        document.addEventListener("msvisibilitychange", onVisibilityChanged, false);
+
+        // Регистрация сервис-воркера для офлайн-функциональности
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register("sw.js", { scope: "./" })
+                .then(function(registration) {
+                    console.log("Сервис-воркер зарегистрирован, область: ", registration.scope);
+                }).catch(function(error) {
+                    console.log("Ошибка регистрации сервис-воркера: ", error);
+                });
+        }
+    </script>
+</body> 
+</html>

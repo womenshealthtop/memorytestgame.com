@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html manifest="offline.appcache">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    
+    <title>Juego de Prueba de Memoria - Mejora tu Memoria y Enfoque</title>
+    <meta name="description" content="Juega este divertido y desafiante juego de prueba de memoria para mejorar tu memoria y habilidades cognitivas. Desafíate a ti mismo con diferentes niveles de dificultad y mejora tu enfoque.">
+    <meta name="keywords" content="juego de prueba de memoria, entrenamiento cerebral, habilidades cognitivas, mejora de la memoria, juegos de enfoque, ejercicios mentales">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph para compartir en redes sociales -->
+    <meta property="og:title" content="Juego de Prueba de Memoria - Mejora tu Memoria y Enfoque">
+    <meta property="og:description" content="Prueba y mejora tu memoria con este atractivo juego de prueba de memoria. Juega para desafiar tu cerebro y aumentar tu enfoque.">
+    <meta property="og:image" content="path_to_image.jpg">
+    <meta property="og:url" content="http://memorytestgame.com/game.html">
+
+    <meta name="twitter:title" content="Juego de Prueba de Memoria - Mejora tu Memoria y Enfoque">
+    <meta name="twitter:description" content="Participa en un divertido y desafiante juego de prueba de memoria que mejora tus habilidades cognitivas y tu memoria.">
+    <meta name="twitter:image" content="path_to_image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <style type="text/css">
+        body { 
+            background-color: black; 
+            color: white; 
+            font-family: Arial, sans-serif; 
+            margin: 0;
+            padding: 0;
+        }
+        canvas { 
+            display: block; 
+            margin: 0 auto; 
+            -ms-touch-action: none;
+        }
+        h1 {
+            font-size: 2em;
+            margin: 20px 0;
+        }
+        p {
+            font-size: 1.2em;
+        }
+
+        /* Diseño adaptativo */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.5em;
+            }
+            p {
+                font-size: 1em;
+            }
+            #c2canvasdiv {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3148350038470800"
+     crossorigin="anonymous"></script>
+</head>
+
+<body> 
+    <div id="fb-root"></div>
+    <div style="text-align: center;">
+        <h1>Juego de Prueba de Memoria</h1>
+        <p>Bienvenido al <strong>Juego de Prueba de Memoria</strong>. Desafíate a ti mismo y mejora tu memoria y enfoque a través de este juego interactivo. ¡Comienza a jugar ahora!</p>
+    
+        <script>
+            // Emitir una advertencia si se intenta previsualizar un proyecto exportado desde el disco.
+            (function() {
+                if (window.location.protocol.substr(0, 4) === "file") {
+                    alert("Los juegos exportados no funcionarán hasta que los subas. (Cuando se ejecuta en el protocolo file:///, los navegadores bloquean muchas características por razones de seguridad.)");
+                }
+            })();
+        </script>
+
+        <div id="c2canvasdiv" style="width: 100%; height: 100%; max-width: 1280px; max-height: 720px; margin: 0 auto;">
+            <canvas id="c2canvas" width="1280" height="720"></canvas>
+        </div>
+
+        <br />
+    </div>
+
+    <script src="jquery-2.1.1.min.js"></script>
+    <script src="c2runtime.js"></script>
+    <script>
+        // Asegurando la compatibilidad entre navegadores para el cambio de tamaño del lienzo
+        jQuery(window).resize(function() {
+            cr_sizeCanvas(jQuery(window).width(), jQuery(window).height());
+        });
+
+        jQuery(document).ready(function () {
+            cr_createRuntime("c2canvas");
+        });
+
+        // Eventos de cambio de visibilidad para diferentes navegadores
+        function onVisibilityChanged() {
+            if (document.hidden || document.mozHidden || document.webkitHidden || document.msHidden) {
+                cr_setSuspended(true);
+            } else {
+                cr_setSuspended(false);
+            }
+        }
+
+        document.addEventListener("visibilitychange", onVisibilityChanged, false);
+        document.addEventListener("mozvisibilitychange", onVisibilityChanged, false);
+        document.addEventListener("webkitvisibilitychange", onVisibilityChanged, false);
+        document.addEventListener("msvisibilitychange", onVisibilityChanged, false);
+
+        // Registrar el service worker para funcionalidad sin conexión
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register("sw.js", { scope: "./" })
+                .then(function(registration) {
+                    console.log("Service Worker registrado con el alcance: ", registration.scope);
+                }).catch(function(error) {
+                    console.log("Error al registrar el Service Worker: ", error);
+                });
+        }
+    </script>
+</body> 
+</html>

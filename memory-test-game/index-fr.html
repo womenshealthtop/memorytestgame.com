@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html manifest="offline.appcache">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    
+    <title>Jeu de Test de Mémoire - Améliorez Votre Mémoire et Concentration</title>
+    <meta name="description" content="Jouez à ce jeu de test de mémoire amusant et stimulant pour améliorer votre mémoire et vos compétences cognitives. Défiez-vous avec différents niveaux de difficulté et améliorez votre concentration.">
+    <meta name="keywords" content="jeu de test de mémoire, entraînement cérébral, compétences cognitives, amélioration de la mémoire, jeux de concentration, exercices mentaux">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph pour le partage sur les réseaux sociaux -->
+    <meta property="og:title" content="Jeu de Test de Mémoire - Améliorez Votre Mémoire et Concentration">
+    <meta property="og:description" content="Testez et améliorez votre mémoire avec ce jeu de test de mémoire captivant. Jouez pour défier votre cerveau et booster votre concentration.">
+    <meta property="og:image" content="path_to_image.jpg">
+    <meta property="og:url" content="http://memorytestgame.com/game.html">
+
+    <meta name="twitter:title" content="Jeu de Test de Mémoire - Améliorez Votre Mémoire et Concentration">
+    <meta name="twitter:description" content="Participez à un jeu de test de mémoire amusant et stimulant qui améliore vos compétences cognitives et votre mémoire.">
+    <meta name="twitter:image" content="path_to_image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <style type="text/css">
+        body { 
+            background-color: black; 
+            color: white; 
+            font-family: Arial, sans-serif; 
+            margin: 0;
+            padding: 0;
+        }
+        canvas { 
+            display: block; 
+            margin: 0 auto; 
+            -ms-touch-action: none;
+        }
+        h1 {
+            font-size: 2em;
+            margin: 20px 0;
+        }
+        p {
+            font-size: 1.2em;
+        }
+
+        /* Design responsive */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.5em;
+            }
+            p {
+                font-size: 1em;
+            }
+            #c2canvasdiv {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3148350038470800"
+     crossorigin="anonymous"></script>
+</head>
+
+<body> 
+    <div id="fb-root"></div>
+    <div style="text-align: center;">
+        <h1>Jeu de Test de Mémoire</h1>
+        <p>Bienvenue dans le <strong>Jeu de Test de Mémoire</strong>. Dépassez-vous et améliorez votre mémoire et votre concentration à travers ce jeu interactif. Commencez à jouer maintenant !</p>
+    
+        <script>
+            // Afficher un avertissement si l'on essaie de prévisualiser un projet exporté depuis le disque.
+            (function() {
+                if (window.location.protocol.substr(0, 4) === "file") {
+                    alert("Les jeux exportés ne fonctionneront pas tant que vous ne les avez pas téléchargés. (Lorsqu'ils sont exécutés en utilisant le protocole file:///, les navigateurs bloquent de nombreuses fonctionnalités pour des raisons de sécurité.)");
+                }
+            })();
+        </script>
+
+        <div id="c2canvasdiv" style="width: 100%; height: 100%; max-width: 1280px; max-height: 720px; margin: 0 auto;">
+            <canvas id="c2canvas" width="1280" height="720"></canvas>
+        </div>
+
+        <br />
+    </div>
+
+    <script src="jquery-2.1.1.min.js"></script>
+    <script src="c2runtime.js"></script>
+    <script>
+        // Assurer la compatibilité entre les navigateurs pour le redimensionnement du canvas
+        jQuery(window).resize(function() {
+            cr_sizeCanvas(jQuery(window).width(), jQuery(window).height());
+        });
+
+        jQuery(document).ready(function () {
+            cr_createRuntime("c2canvas");
+        });
+
+        // Événements de changement de visibilité pour différents navigateurs
+        function onVisibilityChanged() {
+            if (document.hidden || document.mozHidden || document.webkitHidden || document.msHidden) {
+                cr_setSuspended(true);
+            } else {
+                cr_setSuspended(false);
+            }
+        }
+
+        document.addEventListener("visibilitychange", onVisibilityChanged, false);
+        document.addEventListener("mozvisibilitychange", onVisibilityChanged, false);
+        document.addEventListener("webkitvisibilitychange", onVisibilityChanged, false);
+        document.addEventListener("msvisibilitychange", onVisibilityChanged, false);
+
+        // Enregistrer le service worker pour la fonctionnalité hors ligne
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register("sw.js", { scope: "./" })
+                .then(function(registration) {
+                    console.log("Service Worker enregistré avec le scope : ", registration.scope);
+                }).catch(function(error) {
+                    console.log("Échec de l'enregistrement du Service Worker : ", error);
+                });
+        }
+    </script>
+</body> 
+</html>
