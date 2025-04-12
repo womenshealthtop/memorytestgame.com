@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru" manifest="offline.appcache">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Магические Карты — Онлайн Многопользовательская Игра | Magic: The Gathering</title>
+    
+    <!-- Мета-описание для SEO -->
+    <meta name="description" content="Играйте в Магические Карты онлайн с друзьями! Наслаждайтесь сражениями в Magic: The Gathering, участвуйте в многопользовательских играх и откройте лучшие стратегии. Присоединяйтесь к игре онлайн прямо сейчас!" />
+    
+    <!-- Ключевые слова -->
+    <meta name="keywords" content="Магические Карты, Игра в Магические Карты, Онлайн Игра в Карты, Многопользовательская Игра, Magic: The Gathering, Стратегии Magic" />
+    
+    <!-- Манифест веб-приложения -->
+    <link rel="manifest" href="appmanifest.json" />
+    
+    <!-- Настройки для мобильных устройств -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <link rel="apple-touch-icon" sizes="256x256" href="icon-256.png" />
+    <meta name="HandheldFriendly" content="true" />
+    
+    <!-- Теги для Android -->
+    <meta name="mobile-web-app-capable" content="yes" />
+    <link rel="shortcut icon" sizes="256x256" href="icon-256.png" />
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KW8FHBMW');</script>
+
+    <!-- Google Tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-X8MZQ3KM0T"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3148350038470800"
+     crossorigin="anonymous"></script>
+
+    <style type="text/css">
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        html, body {
+            background: #000;
+            color: #fff;
+            overflow: hidden;
+            touch-action: none;
+            -ms-touch-action: none;
+        }
+        canvas {
+            -ms-touch-action: none; 
+            touch-action: none;      
+        }
+    </style>
+</head> 
+
+<body>
+    <div id="fb-root"></div>
+    
+    <script>
+        // Предупреждение, если игра открыта локально
+        (function(){
+            if (window.location.protocol.substr(0, 4) === "file") {
+                alert("Экспортированные игры не будут работать, пока вы не загрузите их онлайн. (При запуске с file:/// многие функции блокируются браузером по соображениям безопасности.)");
+            }
+        })();
+    </script>
+    
+    <!-- Канвас для отображения игры -->
+    <div id="c2canvasdiv">
+        <canvas id="c2canvas" width="854" height="480">
+            <h1>Ваш браузер не поддерживает HTML5. Пожалуйста, обновите его до последней версии.</h1>
+        </canvas>
+    </div>
+    
+    <!-- Подключение скриптов -->
+    <script src="jquery-2.1.1.min.js"></script>
+    <script src="c2runtime.js"></script>
+
+    <script>
+        // Запуск Construct 2 проекта после загрузки страницы
+        jQuery(document).ready(function () {
+            cr_createRuntime("c2canvas");
+        });
+
+        // При изменении видимости страницы — приостановка/возобновление игры
+        function onVisibilityChanged() {
+            if (document.hidden || document.mozHidden || document.webkitHidden || document.msHidden)
+                cr_setSuspended(true);
+            else
+                cr_setSuspended(false);
+        };
+
+        document.addEventListener("visibilitychange", onVisibilityChanged, false);
+        document.addEventListener("mozvisibilitychange", onVisibilityChanged, false);
+        document.addEventListener("webkitvisibilitychange", onVisibilityChanged, false);
+        document.addEventListener("msvisibilitychange", onVisibilityChanged, false);
+
+        if (navigator.serviceWorker && navigator.serviceWorker.register) {
+            navigator.serviceWorker.register("sw.js", { scope: "./" });
+        }
+    </script>
+</body>
+</html>
