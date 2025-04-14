@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="hi" manifest="offline.appcache">
+<head>
+    <meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<title>हैलोवीन मेमोरी गेम ऑनलाइन मुफ्त बच्चों के लिए | डाउनलोड की आवश्यकता नहीं - MemoryTestGame</title>
+	
+	<!-- SEO Meta Tags -->
+	<meta name="description" content="MemoryTestGame पर हैलोवीन मेमोरी गेम खेलें – बच्चों के लिए एक मजेदार और डरावना ऑनलाइन मेमोरी गेम। कोई डाउनलोड की आवश्यकता नहीं!">
+	<meta name="keywords" content="हैलोवीन मेमोरी, हैलोवीन मेमोरी गेम, हैलोवीन मेमोरी गेम ऑनलाइन, हैलोवीन मेमोरी गेम मुफ्त, हैलोवीन मेमोरी गेम बच्चों के लिए, हैलोवीन मेमोरी गेम ऑनलाइन मुफ्त बिना डाउनलोड">
+	<meta name="robots" content="index, follow">
+	<link rel="canonical" href="https://memorytestgame.com/halloween-memory" />
+
+	<!-- Open Graph for Social Media Sharing -->
+	<meta property="og:title" content="हैलोवीन मेमोरी गेम - बच्चों के लिए मुफ्त ऑनलाइन मेमोरी चैलेंज" />
+	<meta property="og:description" content="MemoryTestGame पर हैलोवीन मेमोरी गेम का आनंद लें। बच्चों के लिए डरावना मजा, खेलने के लिए मुफ्त, और डाउनलोड की आवश्यकता नहीं!" />
+	<meta property="og:image" content="https://memorytestgame.com/Halloween.png" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://memorytestgame.com/halloween-memory" />
+
+	<!-- Web App Manifest -->
+	<link rel="manifest" href="appmanifest.json" />
+
+	<!-- Mobile Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<meta name="HandheldFriendly" content="true" />
+	<meta name="mobile-web-app-capable" content="yes" />
+	<link rel="apple-touch-icon" sizes="256x256" href="icon-256.png" />
+	<link rel="shortcut icon" sizes="256x256" href="icon-256.png" />
+
+    <!-- Styling -->
+	<style type="text/css">
+		* {
+			padding: 0;
+			margin: 0;
+		}
+		html, body {
+			background: #000;
+			color: #fff;
+			overflow: hidden;
+			touch-action: none;
+			-ms-touch-action: none;
+			font-family: Arial, sans-serif;
+		}
+		canvas {
+			touch-action-delay: none;
+			touch-action: none;
+			-ms-touch-action: none;
+		}
+		#content {
+			position: absolute;
+			top: 10px;
+			left: 10px;
+			right: 10px;
+			z-index: 999;
+			color: #FFA500;
+			text-align: center;
+			pointer-events: none;
+		}
+		h1 {
+			font-size: 2em;
+			margin-bottom: 0.5em;
+		}
+		p {
+			font-size: 1em;
+			max-width: 640px;
+			margin: 0 auto 1em auto;
+			line-height: 1.5;
+		}
+	</style>
+</head> 
+
+<body> 
+
+	<!-- File Protocol Warning -->
+	<script>
+		(function(){
+			if (window.location.protocol.substr(0, 4) === "file") {
+				alert("एक्सपोर्ट की गई गेम्स तब तक काम नहीं करेंगी जब तक आप इन्हें डाउनलोड नहीं कर लेते। (जब आप file:/// प्रोटोकॉल के जरिए चलाते हैं, तो ब्राउज़र सुरक्षा कारणों से कई सुविधाओं को ब्लॉक कर देते हैं।)");
+			}
+		})();
+	</script>
+	
+	<!-- Game Canvas -->
+	<div id="c2canvasdiv">
+		<canvas id="c2canvas" width="100%" height="860"></canvas>
+	</div>
+	
+	<!-- Scripts -->
+	<script src="jquery-2.1.1.min.js"></script>
+	<script src="c2runtime.js"></script>
+    <script>
+		jQuery(window).resize(function() {
+			cr_sizeCanvas(jQuery(window).width(), jQuery(window).height());
+		});
+		
+		jQuery(document).ready(function () {			
+			cr_createRuntime("c2canvas");
+		});
+		
+		function onVisibilityChanged() {
+			if (document.hidden || document.mozHidden || document.webkitHidden || document.msHidden)
+				cr_setSuspended(true);
+			else
+				cr_setSuspended(false);
+		};
+		
+		document.addEventListener("visibilitychange", onVisibilityChanged, false);
+		document.addEventListener("mozvisibilitychange", onVisibilityChanged, false);
+		document.addEventListener("webkitvisibilitychange", onVisibilityChanged, false);
+		document.addEventListener("msvisibilitychange", onVisibilityChanged, false);
+		
+		if (navigator.serviceWorker && navigator.serviceWorker.register) {
+			navigator.serviceWorker.register("sw.js", { scope: "./" });
+		}
+    </script>
+
+	<!-- SEO-friendly Intro Content -->
+	<div>
+		<h1>हैलोवीन मेमोरी गेम - बच्चों के लिए मुफ्त और ऑनलाइन</h1>
+		<p><strong>MemoryTestGame</strong> पर <strong>हैलोवीन मेमोरी गेम</strong> में आपका स्वागत है! यह <strong>ऑनलाइन मुफ्त हैलोवीन मेमोरी गेम</strong> बच्चों और परिवारों के लिए एक डरावनी चुनौती प्रदान करता है, जो उनकी याददाश्त को बढ़ावा देता है — और वह भी बिना किसी डाउनलोड की आवश्यकता के।</p>
+		<p>चाहे आप घर पर हों या कक्षा में, यह <strong>हैलोवीन मेमोरी गेम बच्चों के लिए</strong> एक आदर्श मौसमी चुनौती है। कार्ड पलटें, डरावने प्रतीक खोजें, और अपनी याददाश्त की गति को परखें!</p>
+	</div>
+</body> 
+</html>

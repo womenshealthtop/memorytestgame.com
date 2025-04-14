@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ar" manifest="offline.appcache">
+<head>
+    <meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<title>لعبة ذاكرة الهالوين أونلاين مجاناً للأطفال | بدون تحميل - MemoryTestGame</title>
+	
+	<!-- SEO Meta Tags -->
+	<meta name="description" content="العب لعبة ذاكرة الهالوين على MemoryTestGame – لعبة ذاكرة مرعبة وممتعة أونلاين للأطفال. لا حاجة للتحميل!">
+	<meta name="keywords" content="لعبة ذاكرة الهالوين, لعبة ذاكرة الهالوين أونلاين, لعبة ذاكرة الهالوين مجاناً, لعبة ذاكرة الهالوين للأطفال, لعبة ذاكرة الهالوين أونلاين مجاناً بدون تحميل">
+	<meta name="robots" content="index, follow">
+	<link rel="canonical" href="https://memorytestgame.com/halloween-memory" />
+
+	<!-- Open Graph for Social Media Sharing -->
+	<meta property="og:title" content="لعبة ذاكرة الهالوين - تحدي ذاكرة مجاني أونلاين للأطفال" />
+	<meta property="og:description" content="استمتع بلعبة ذاكرة الهالوين أونلاين على MemoryTestGame. مرح مرعب للأطفال، مجاني للعب، ولا حاجة للتحميل!" />
+	<meta property="og:image" content="https://memorytestgame.com/icon-256.png" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://memorytestgame.com/halloween-memory" />
+
+	<!-- Web App Manifest -->
+	<link rel="manifest" href="appmanifest.json" />
+
+	<!-- Mobile Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<meta name="HandheldFriendly" content="true" />
+	<meta name="mobile-web-app-capable" content="yes" />
+	<link rel="apple-touch-icon" sizes="256x256" href="icon-256.png" />
+	<link rel="shortcut icon" sizes="256x256" href="icon-256.png" />
+
+    <!-- Styling -->
+	<style type="text/css">
+		* {
+			padding: 0;
+			margin: 0;
+		}
+		html, body {
+			background: #000;
+			color: #fff;
+			overflow: hidden;
+			touch-action: none;
+			-ms-touch-action: none;
+			font-family: Arial, sans-serif;
+		}
+		canvas {
+			touch-action-delay: none;
+			touch-action: none;
+			-ms-touch-action: none;
+		}
+		#content {
+			position: absolute;
+			top: 10px;
+			left: 10px;
+			right: 10px;
+			z-index: 999;
+			color: #FFA500;
+			text-align: center;
+			pointer-events: none;
+		}
+		h1 {
+			font-size: 2em;
+			margin-bottom: 0.5em;
+		}
+		p {
+			font-size: 1em;
+			max-width: 640px;
+			margin: 0 auto 1em auto;
+			line-height: 1.5;
+		}
+	</style>
+</head> 
+
+<body> 
+
+	<!-- File Protocol Warning -->
+	<script>
+		(function(){
+			if (window.location.protocol.substr(0, 4) === "file") {
+				alert("لن تعمل الألعاب المصدرة حتى تقوم بتحميلها. (عند التشغيل عبر بروتوكول file:///، يتم حظر العديد من الميزات في المتصفحات لأسباب أمنية.)");
+			}
+		})();
+	</script>
+	
+	<!-- Game Canvas -->
+	<div id="c2canvasdiv">
+		<canvas id="c2canvas" width="100%" height="860"></canvas>
+	</div>
+	
+	<!-- Scripts -->
+	<script src="jquery-2.1.1.min.js"></script>
+	<script src="c2runtime.js"></script>
+    <script>
+		jQuery(window).resize(function() {
+			cr_sizeCanvas(jQuery(window).width(), jQuery(window).height());
+		});
+		
+		jQuery(document).ready(function () {			
+			cr_createRuntime("c2canvas");
+		});
+		
+		function onVisibilityChanged() {
+			if (document.hidden || document.mozHidden || document.webkitHidden || document.msHidden)
+				cr_setSuspended(true);
+			else
+				cr_setSuspended(false);
+		};
+		
+		document.addEventListener("visibilitychange", onVisibilityChanged, false);
+		document.addEventListener("mozvisibilitychange", onVisibilityChanged, false);
+		document.addEventListener("webkitvisibilitychange", onVisibilityChanged, false);
+		document.addEventListener("msvisibilitychange", onVisibilityChanged, false);
+		
+		if (navigator.serviceWorker && navigator.serviceWorker.register) {
+			navigator.serviceWorker.register("sw.js", { scope: "./" });
+		}
+    </script>
+
+	<!-- SEO-friendly Intro Content -->
+	<div >
+		<h1>لعبة ذاكرة الهالوين - مجانية وأونلاين للأطفال</h1>
+		<p>مرحبًا بك في <strong>لعبة ذاكرة الهالوين</strong> على <strong>MemoryTestGame</strong>! هذه <strong>اللعبة المجانية لذاكرة الهالوين أونلاين</strong> مصممة للأطفال والعائلات للاستمتاع بمرح مرعب أثناء تعزيز قدرة الدماغ — وكل ذلك بدون الحاجة إلى تحميل أي شيء.</p>
+		<p>سواء كنت في المنزل أو في الفصل الدراسي، فإن هذه <strong>اللعبة لزيادة قدرة الذاكرة للأطفال في الهالوين</strong> هي التحدي الموسمي المثالي. اقلب البطاقات، وابحث عن الرموز المرعبة، واختبر مدى سرعة ذاكرتك!</p>
+	</div>
+</body> 
+</html>
