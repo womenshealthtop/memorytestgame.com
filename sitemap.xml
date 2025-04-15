@@ -1,499 +1,449 @@
-This XML file does not appear to have any style information associated with it. The document tree is shown below.
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!--  created with Free Online Sitemap Generator www.xml-sitemaps.com  -->
+﻿<?xml version="1.0" encoding="UTF-8"?>
+		<!--	created with www.mysitemapgenerator.com	-->
+		<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>https://memorytestgame.com/</loc>
-<lastmod>2025-04-15T09:56:15+00:00</lastmod>
-<priority>1.00</priority>
+	<loc>https://memorytestgame.com/</loc>
+	<lastmod>2025-04-15T13:02:25+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-<loc>https://memorytestgame.com/memory-match</loc>
-<lastmod>2025-04-15T09:56:16+00:00</lastmod>
-<priority>0.80</priority>
+	<loc>https://memorytestgame.com/memory-match</loc>
+	<lastmod>2025-04-15T13:02:25+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-<loc>https://memorytestgame.com/index_ar.html</loc>
-<lastmod>2025-04-15T09:56:16+00:00</lastmod>
-<priority>0.80</priority>
+	<loc>https://memorytestgame.com/index_ar.html</loc>
+	<lastmod>2025-04-15T13:02:25+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-<loc>https://memorytestgame.com/index_en.html</loc>
-<lastmod>2025-04-15T09:56:16+00:00</lastmod>
-<priority>0.80</priority>
+	<loc>https://memorytestgame.com/index_en.html</loc>
+	<lastmod>2025-04-15T13:02:25+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-<loc>https://memorytestgame.com/index_es.html</loc>
-<lastmod>2025-04-15T09:56:16+00:00</lastmod>
-<priority>0.80</priority>
+	<loc>https://memorytestgame.com/index_es.html</loc>
+	<lastmod>2025-04-15T13:02:25+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-<loc>https://memorytestgame.com/index_fr.html</loc>
-<lastmod>2025-04-15T09:56:16+00:00</lastmod>
-<priority>0.80</priority>
+	<loc>https://memorytestgame.com/index_fr.html</loc>
+	<lastmod>2025-04-15T13:02:25+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-<loc>https://memorytestgame.com/index_de.html</loc>
-<lastmod>2025-04-15T09:56:17+00:00</lastmod>
-<priority>0.80</priority>
+	<loc>https://memorytestgame.com/index_de.html</loc>
+	<lastmod>2025-04-15T13:02:25+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-<loc>https://memorytestgame.com/index_ja.html</loc>
-<lastmod>2025-04-15T09:56:17+00:00</lastmod>
-<priority>0.80</priority>
+	<loc>https://memorytestgame.com/index_ja.html</loc>
+	<lastmod>2025-04-15T13:02:25+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-<loc>https://memorytestgame.com/index_ru.html</loc>
-<lastmod>2025-04-15T09:56:17+00:00</lastmod>
-<priority>0.80</priority>
+	<loc>https://memorytestgame.com/index_ru.html</loc>
+	<lastmod>2025-04-15T13:02:25+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-<loc>https://memorytestgame.com/index_hi.html</loc>
-<lastmod>2025-04-15T09:56:17+00:00</lastmod>
-<priority>0.80</priority>
+	<loc>https://memorytestgame.com/index_hi.html</loc>
+	<lastmod>2025-04-15T13:02:25+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-<loc>https://memorytestgame.com/index_zh.html</loc>
-<lastmod>2025-04-15T09:56:18+00:00</lastmod>
-<priority>0.80</priority>
+	<loc>https://memorytestgame.com/index_zh.html</loc>
+	<lastmod>2025-04-15T13:02:25+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-<loc>https://memorytestgame.com/memory-test-game/index.html</loc>
-<lastmod>2025-04-15T09:56:18+00:00</lastmod>
-<priority>0.80</priority>
+	<loc>https://memorytestgame.com/memory-test-game/index.html</loc>
+	<lastmod>2025-04-15T13:02:25+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-<loc>https://memorytestgame.com/memory-game/index.html</loc>
-<lastmod>2025-04-15T09:56:18+00:00</lastmod>
-<priority>0.80</priority>
+	<loc>https://memorytestgame.com/memory-game/index.html</loc>
+	<lastmod>2025-04-15T13:02:25+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-<loc>https://memorytestgame.com/memory-match/index.html</loc>
-<lastmod>2025-04-15T09:56:18+00:00</lastmod>
-<priority>0.80</priority>
+	<loc>https://memorytestgame.com/memory-match/index.html</loc>
+	<lastmod>2025-04-15T13:02:25+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-<loc>https://memorytestgame.com/numbermemorytest/index.html</loc>
-<lastmod>2025-04-15T09:56:18+00:00</lastmod>
-<priority>0.80</priority>
+	<loc>https://memorytestgame.com/numbermemorytest/index.html</loc>
+	<lastmod>2025-04-15T13:02:25+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-<loc>https://memorytestgame.com/magic-cards/index.html</loc>
-<lastmod>2025-04-15T09:56:18+00:00</lastmod>
-<priority>0.80</priority>
+	<loc>https://memorytestgame.com/magic-cards/index.html</loc>
+	<lastmod>2025-04-15T13:02:25+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-<loc>https://memorytestgame.com/Halloween-memory/index.html</loc>
-<lastmod>2025-04-15T09:56:19+00:00</lastmod>
-<priority>0.80</priority>
+	<loc>https://memorytestgame.com/memory-game</loc>
+	<lastmod>2025-04-15T13:02:25+01:00</lastmod>
+	<priority>1.0</priority>
 </url>
 <url>
-<loc>https://memorytestgame.com/memory-game</loc>
-<lastmod>2025-04-15T09:56:19+00:00</lastmod>
-<priority>0.80</priority>
+	<loc>https://memorytestgame.com/memory-match/index_en.html</loc>
+	<lastmod>2025-04-15T13:02:25+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-<loc>https://memorytestgame.com/memory-match/index_en.html</loc>
-<lastmod>2025-04-15T09:56:19+00:00</lastmod>
-<priority>0.64</priority>
+	<loc>https://memorytestgame.com/memory-match/index_es.html</loc>
+	<lastmod>2025-04-15T13:02:25+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-<loc>https://memorytestgame.com/memory-match/index_es.html</loc>
-<lastmod>2025-04-15T09:56:19+00:00</lastmod>
-<priority>0.64</priority>
+	<loc>https://memorytestgame.com/memory-match/index_fr.html</loc>
+	<lastmod>2025-04-15T13:02:25+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-<loc>https://memorytestgame.com/memory-match/index_fr.html</loc>
-<lastmod>2025-04-15T09:56:20+00:00</lastmod>
-<priority>0.64</priority>
+	<loc>https://memorytestgame.com/memory-match/index_de.html</loc>
+	<lastmod>2025-04-15T13:02:25+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-<loc>https://memorytestgame.com/memory-match/index_de.html</loc>
-<lastmod>2025-04-15T09:56:20+00:00</lastmod>
-<priority>0.64</priority>
+	<loc>https://memorytestgame.com/memory-match/index_it.html</loc>
+	<lastmod>2025-04-15T13:02:25+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-<loc>https://memorytestgame.com/memory-match/index_it.html</loc>
-<lastmod>2025-04-15T09:56:20+00:00</lastmod>
-<priority>0.64</priority>
+	<loc>https://memorytestgame.com/memory-match/index_pt.html</loc>
+	<lastmod>2025-04-15T13:02:25+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-<loc>https://memorytestgame.com/memory-match/index_pt.html</loc>
-<lastmod>2025-04-15T09:56:20+00:00</lastmod>
-<priority>0.64</priority>
+	<loc>https://memorytestgame.com/memory-match/index_ar.html</loc>
+	<lastmod>2025-04-15T13:02:25+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-<loc>https://memorytestgame.com/memory-match/index_ar.html</loc>
-<lastmod>2025-04-15T09:56:20+00:00</lastmod>
-<priority>0.64</priority>
+	<loc>https://memorytestgame.com/memory-match/index_zh-cn.html</loc>
+	<lastmod>2025-04-15T13:02:25+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-<loc>https://memorytestgame.com/memory-match/index_zh-cn.html</loc>
-<lastmod>2025-04-15T09:56:21+00:00</lastmod>
-<priority>0.64</priority>
+	<loc>https://memorytestgame.com/memory-match/index_bg.html</loc>
+	<lastmod>2025-04-15T13:02:25+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-<loc>https://memorytestgame.com/memory-match/index_bg.html</loc>
-<lastmod>2025-04-15T09:56:21+00:00</lastmod>
-<priority>0.64</priority>
+	<loc>https://memorytestgame.com/memory-match/index_cs.html</loc>
+	<lastmod>2025-04-15T13:02:25+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-<loc>https://memorytestgame.com/memory-match/index_cs.html</loc>
-<lastmod>2025-04-15T09:56:21+00:00</lastmod>
-<priority>0.64</priority>
+	<loc>https://memorytestgame.com/memory-match/index_da.html</loc>
+	<lastmod>2025-04-15T13:02:25+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-<loc>https://memorytestgame.com/memory-match/index_da.html</loc>
-<lastmod>2025-04-15T09:56:21+00:00</lastmod>
-<priority>0.64</priority>
+	<loc>https://memorytestgame.com/memory-match/index_el.html</loc>
+	<lastmod>2025-04-15T13:02:25+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-<loc>https://memorytestgame.com/memory-match/index_el.html</loc>
-<lastmod>2025-04-15T09:56:21+00:00</lastmod>
-<priority>0.64</priority>
+	<loc>https://memorytestgame.com/memory-match/index_fi.html</loc>
+	<lastmod>2025-04-15T13:02:25+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-<loc>https://memorytestgame.com/memory-match/index_fi.html</loc>
-<lastmod>2025-04-15T09:56:21+00:00</lastmod>
-<priority>0.64</priority>
+	<loc>https://memorytestgame.com/memory-match/index_hr.html</loc>
+	<lastmod>2025-04-15T13:02:25+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-<loc>https://memorytestgame.com/memory-match/index_hr.html</loc>
-<lastmod>2025-04-15T09:56:22+00:00</lastmod>
-<priority>0.64</priority>
+	<loc>https://memorytestgame.com/memory-match/index_hu.html</loc>
+	<lastmod>2025-04-15T13:02:25+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-<loc>https://memorytestgame.com/memory-match/index_hu.html</loc>
-<lastmod>2025-04-15T09:56:22+00:00</lastmod>
-<priority>0.64</priority>
+	<loc>https://memorytestgame.com/memory-match/index_id.html</loc>
+	<lastmod>2025-04-15T13:02:25+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-<loc>https://memorytestgame.com/memory-match/index_id.html</loc>
-<lastmod>2025-04-15T09:56:22+00:00</lastmod>
-<priority>0.64</priority>
+	<loc>https://memorytestgame.com/memory-match/index_ja.html</loc>
+	<lastmod>2025-04-15T13:02:25+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-<loc>https://memorytestgame.com/memory-match/index_ja.html</loc>
-<lastmod>2025-04-15T09:56:22+00:00</lastmod>
-<priority>0.64</priority>
+	<loc>https://memorytestgame.com/memory-match/index_ko.html</loc>
+	<lastmod>2025-04-15T13:02:25+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-<loc>https://memorytestgame.com/memory-match/index_ko.html</loc>
-<lastmod>2025-04-15T09:56:22+00:00</lastmod>
-<priority>0.64</priority>
+	<loc>https://memorytestgame.com/memory-match/index_nl.html</loc>
+	<lastmod>2025-04-15T13:02:25+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-<loc>https://memorytestgame.com/memory-match/index_nl.html</loc>
-<lastmod>2025-04-15T09:56:22+00:00</lastmod>
-<priority>0.64</priority>
+	<loc>https://memorytestgame.com/memory-match/index_no.html</loc>
+	<lastmod>2025-04-15T13:02:25+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-<loc>https://memorytestgame.com/memory-match/index_no.html</loc>
-<lastmod>2025-04-15T09:56:23+00:00</lastmod>
-<priority>0.64</priority>
+	<loc>https://memorytestgame.com/memory-match/index_pl.html</loc>
+	<lastmod>2025-04-15T13:02:25+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-<loc>https://memorytestgame.com/memory-match/index_pl.html</loc>
-<lastmod>2025-04-15T09:56:23+00:00</lastmod>
-<priority>0.64</priority>
+	<loc>https://memorytestgame.com/memory-match/index_ro.html</loc>
+	<lastmod>2025-04-15T13:02:25+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-<loc>https://memorytestgame.com/memory-match/index_ro.html</loc>
-<lastmod>2025-04-15T09:56:23+00:00</lastmod>
-<priority>0.64</priority>
+	<loc>https://memorytestgame.com/memory-match/index_ru.html</loc>
+	<lastmod>2025-04-15T13:02:25+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-<loc>https://memorytestgame.com/memory-match/index_ru.html</loc>
-<lastmod>2025-04-15T09:56:23+00:00</lastmod>
-<priority>0.64</priority>
+	<loc>https://memorytestgame.com/memory-match/index_sr.html</loc>
+	<lastmod>2025-04-15T13:02:25+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-<loc>https://memorytestgame.com/memory-match/index_sr.html</loc>
-<lastmod>2025-04-15T09:56:24+00:00</lastmod>
-<priority>0.64</priority>
+	<loc>https://memorytestgame.com/memory-match/index_sv.html</loc>
+	<lastmod>2025-04-15T13:02:25+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-<loc>https://memorytestgame.com/memory-match/index_sv.html</loc>
-<lastmod>2025-04-15T09:56:24+00:00</lastmod>
-<priority>0.64</priority>
+	<loc>https://memorytestgame.com/memory-match/index_th.html</loc>
+	<lastmod>2025-04-15T13:02:25+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-<loc>https://memorytestgame.com/memory-match/index_th.html</loc>
-<lastmod>2025-04-15T09:56:24+00:00</lastmod>
-<priority>0.64</priority>
+	<loc>https://memorytestgame.com/memory-match/index_tr.html</loc>
+	<lastmod>2025-04-15T13:02:25+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-<loc>https://memorytestgame.com/memory-match/index_tr.html</loc>
-<lastmod>2025-04-15T09:56:24+00:00</lastmod>
-<priority>0.64</priority>
+	<loc>https://memorytestgame.com/memory-test-game/index-ar.html</loc>
+	<lastmod>2025-04-15T13:02:27+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-<loc>https://memorytestgame.com/memory-test-game/index-ar.html</loc>
-<lastmod>2025-04-15T09:56:25+00:00</lastmod>
-<priority>0.64</priority>
+	<loc>https://memorytestgame.com/memory-game/index-ar.html</loc>
+	<lastmod>2025-04-15T13:02:27+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-<loc>https://memorytestgame.com/memory-game/index-ar.html</loc>
-<lastmod>2025-04-15T09:56:25+00:00</lastmod>
-<priority>0.64</priority>
+	<loc>https://memorytestgame.com/memory-match/index-ar.html</loc>
+	<lastmod>2025-04-15T13:02:27+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-<loc>https://memorytestgame.com/memory-match/index-ar.html</loc>
-<lastmod>2025-04-15T09:56:25+00:00</lastmod>
-<priority>0.64</priority>
+	<loc>https://memorytestgame.com/numbermemorytest/index-ar.html</loc>
+	<lastmod>2025-04-15T13:02:27+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-<loc>https://memorytestgame.com/numbermemorytest/index-ar.html</loc>
-<lastmod>2025-04-15T09:56:25+00:00</lastmod>
-<priority>0.64</priority>
+	<loc>https://memorytestgame.com/magic-cards/index-ar.html</loc>
+	<lastmod>2025-04-15T13:02:27+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-<loc>https://memorytestgame.com/magic-cards/index-ar.html</loc>
-<lastmod>2025-04-15T09:56:25+00:00</lastmod>
-<priority>0.64</priority>
+	<loc>https://memorytestgame.com/memory-test-game/index-en.html</loc>
+	<lastmod>2025-04-15T13:02:28+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-<loc>https://memorytestgame.com/Halloween-memory/index-ar.html</loc>
-<lastmod>2025-04-15T09:56:26+00:00</lastmod>
-<priority>0.64</priority>
+	<loc>https://memorytestgame.com/memory-game/index-en.html</loc>
+	<lastmod>2025-04-15T13:02:28+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-<loc>https://memorytestgame.com/memory-test-game/index-en.html</loc>
-<lastmod>2025-04-15T09:56:26+00:00</lastmod>
-<priority>0.64</priority>
+	<loc>https://memorytestgame.com/memory-match/index-en.html</loc>
+	<lastmod>2025-04-15T13:02:28+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-<loc>https://memorytestgame.com/memory-game/index-en.html</loc>
-<lastmod>2025-04-15T09:56:26+00:00</lastmod>
-<priority>0.64</priority>
+	<loc>https://memorytestgame.com/numbermemorytest/index-en.html</loc>
+	<lastmod>2025-04-15T13:02:28+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-<loc>https://memorytestgame.com/memory-match/index-en.html</loc>
-<lastmod>2025-04-15T09:56:26+00:00</lastmod>
-<priority>0.64</priority>
+	<loc>https://memorytestgame.com/magic-cards/index-en.html</loc>
+	<lastmod>2025-04-15T13:02:28+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-<loc>https://memorytestgame.com/numbermemorytest/index-en.html</loc>
-<lastmod>2025-04-15T09:56:26+00:00</lastmod>
-<priority>0.64</priority>
+	<loc>https://memorytestgame.com/memory-test-game/index-es.html</loc>
+	<lastmod>2025-04-15T13:02:28+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-<loc>https://memorytestgame.com/magic-cards/index-en.html</loc>
-<lastmod>2025-04-15T09:56:27+00:00</lastmod>
-<priority>0.64</priority>
+	<loc>https://memorytestgame.com/memory-game/index-es.html</loc>
+	<lastmod>2025-04-15T13:02:28+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-<loc>https://memorytestgame.com/Halloween-memory/index-en.html</loc>
-<lastmod>2025-04-15T09:56:27+00:00</lastmod>
-<priority>0.64</priority>
+	<loc>https://memorytestgame.com/memory-match/index-es.html</loc>
+	<lastmod>2025-04-15T13:02:28+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-<loc>https://memorytestgame.com/memory-test-game/index-es.html</loc>
-<lastmod>2025-04-15T09:56:27+00:00</lastmod>
-<priority>0.64</priority>
+	<loc>https://memorytestgame.com/numbermemorytest/index-es.html</loc>
+	<lastmod>2025-04-15T13:02:28+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-<loc>https://memorytestgame.com/memory-game/index-es.html</loc>
-<lastmod>2025-04-15T09:56:27+00:00</lastmod>
-<priority>0.64</priority>
+	<loc>https://memorytestgame.com/magic-cards/index-es.html</loc>
+	<lastmod>2025-04-15T13:02:28+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-<loc>https://memorytestgame.com/memory-match/index-es.html</loc>
-<lastmod>2025-04-15T09:56:27+00:00</lastmod>
-<priority>0.64</priority>
+	<loc>https://memorytestgame.com/memory-test-game/index-fr.html</loc>
+	<lastmod>2025-04-15T13:02:29+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-<loc>https://memorytestgame.com/numbermemorytest/index-es.html</loc>
-<lastmod>2025-04-15T09:56:27+00:00</lastmod>
-<priority>0.64</priority>
+	<loc>https://memorytestgame.com/memory-game/index-fr.html</loc>
+	<lastmod>2025-04-15T13:02:29+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-<loc>https://memorytestgame.com/magic-cards/index-es.html</loc>
-<lastmod>2025-04-15T09:56:28+00:00</lastmod>
-<priority>0.64</priority>
+	<loc>https://memorytestgame.com/memory-match/index-fr.html</loc>
+	<lastmod>2025-04-15T13:02:29+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-<loc>https://memorytestgame.com/Halloween-memory/index-es.html</loc>
-<lastmod>2025-04-15T09:56:28+00:00</lastmod>
-<priority>0.64</priority>
+	<loc>https://memorytestgame.com/numbermemorytest/index-fr.html</loc>
+	<lastmod>2025-04-15T13:02:29+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-<loc>https://memorytestgame.com/memory-test-game/index-fr.html</loc>
-<lastmod>2025-04-15T09:56:28+00:00</lastmod>
-<priority>0.64</priority>
+	<loc>https://memorytestgame.com/magic-cards/index-fr.html</loc>
+	<lastmod>2025-04-15T13:02:29+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-<loc>https://memorytestgame.com/memory-game/index-fr.html</loc>
-<lastmod>2025-04-15T09:56:28+00:00</lastmod>
-<priority>0.64</priority>
+	<loc>https://memorytestgame.com/memory-test-game/index-de.html</loc>
+	<lastmod>2025-04-15T13:02:29+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-<loc>https://memorytestgame.com/memory-match/index-fr.html</loc>
-<lastmod>2025-04-15T09:56:28+00:00</lastmod>
-<priority>0.64</priority>
+	<loc>https://memorytestgame.com/memory-game/index-de.html</loc>
+	<lastmod>2025-04-15T13:02:29+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-<loc>https://memorytestgame.com/numbermemorytest/index-fr.html</loc>
-<lastmod>2025-04-15T09:56:29+00:00</lastmod>
-<priority>0.64</priority>
+	<loc>https://memorytestgame.com/memory-match/index-de.html</loc>
+	<lastmod>2025-04-15T13:02:29+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-<loc>https://memorytestgame.com/magic-cards/index-fr.html</loc>
-<lastmod>2025-04-15T09:56:29+00:00</lastmod>
-<priority>0.64</priority>
+	<loc>https://memorytestgame.com/numbermemorytest/index-de.html</loc>
+	<lastmod>2025-04-15T13:02:29+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-<loc>https://memorytestgame.com/Halloween-memory/index-fr.html</loc>
-<lastmod>2025-04-15T09:56:29+00:00</lastmod>
-<priority>0.64</priority>
+	<loc>https://memorytestgame.com/magic-cards/index-de.html</loc>
+	<lastmod>2025-04-15T13:02:29+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-<loc>https://memorytestgame.com/memory-test-game/index-de.html</loc>
-<lastmod>2025-04-15T09:56:29+00:00</lastmod>
-<priority>0.64</priority>
+	<loc>https://memorytestgame.com/memory-test-game/index-ja.html</loc>
+	<lastmod>2025-04-15T13:02:29+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-<loc>https://memorytestgame.com/memory-game/index-de.html</loc>
-<lastmod>2025-04-15T09:56:29+00:00</lastmod>
-<priority>0.64</priority>
+	<loc>https://memorytestgame.com/memory-game/index-ja.html</loc>
+	<lastmod>2025-04-15T13:02:29+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-<loc>https://memorytestgame.com/memory-match/index-de.html</loc>
-<lastmod>2025-04-15T09:56:30+00:00</lastmod>
-<priority>0.64</priority>
+	<loc>https://memorytestgame.com/memory-match/index-ja.html</loc>
+	<lastmod>2025-04-15T13:02:29+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-<loc>https://memorytestgame.com/numbermemorytest/index-de.html</loc>
-<lastmod>2025-04-15T09:56:30+00:00</lastmod>
-<priority>0.64</priority>
+	<loc>https://memorytestgame.com/numbermemorytest/index-ja.html</loc>
+	<lastmod>2025-04-15T13:02:29+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-<loc>https://memorytestgame.com/magic-cards/index-de.html</loc>
-<lastmod>2025-04-15T09:56:30+00:00</lastmod>
-<priority>0.64</priority>
+	<loc>https://memorytestgame.com/magic-cards/index-ja.html</loc>
+	<lastmod>2025-04-15T13:02:29+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-<loc>https://memorytestgame.com/Halloween-memory/index-de.html</loc>
-<lastmod>2025-04-15T09:56:30+00:00</lastmod>
-<priority>0.64</priority>
+	<loc>https://memorytestgame.com/memory-test-game/index-hi.html</loc>
+	<lastmod>2025-04-15T13:02:30+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-<loc>https://memorytestgame.com/memory-test-game/index-ja.html</loc>
-<lastmod>2025-04-15T09:56:30+00:00</lastmod>
-<priority>0.64</priority>
+	<loc>https://memorytestgame.com/memory-game/index-hi.html</loc>
+	<lastmod>2025-04-15T13:02:30+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-<loc>https://memorytestgame.com/memory-game/index-ja.html</loc>
-<lastmod>2025-04-15T09:56:31+00:00</lastmod>
-<priority>0.64</priority>
+	<loc>https://memorytestgame.com/memory-match/index-hi.html</loc>
+	<lastmod>2025-04-15T13:02:30+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-<loc>https://memorytestgame.com/memory-match/index-ja.html</loc>
-<lastmod>2025-04-15T09:56:31+00:00</lastmod>
-<priority>0.64</priority>
+	<loc>https://memorytestgame.com/numbermemorytest/index-hi.html</loc>
+	<lastmod>2025-04-15T13:02:30+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-<loc>https://memorytestgame.com/numbermemorytest/index-ja.html</loc>
-<lastmod>2025-04-15T09:56:31+00:00</lastmod>
-<priority>0.64</priority>
+	<loc>https://memorytestgame.com/magic-cards/index-hi.html</loc>
+	<lastmod>2025-04-15T13:02:30+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-<loc>https://memorytestgame.com/magic-cards/index-ja.html</loc>
-<lastmod>2025-04-15T09:56:31+00:00</lastmod>
-<priority>0.64</priority>
+	<loc>https://memorytestgame.com/memory-test-game/index-zh.html</loc>
+	<lastmod>2025-04-15T13:02:30+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-<loc>https://memorytestgame.com/Halloween-memory/index-ja.html</loc>
-<lastmod>2025-04-15T09:56:31+00:00</lastmod>
-<priority>0.64</priority>
+	<loc>https://memorytestgame.com/memory-game/index-zh.html</loc>
+	<lastmod>2025-04-15T13:02:30+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-<loc>https://memorytestgame.com/memory-test-game/index-ru.html</loc>
-<lastmod>2025-04-15T09:56:32+00:00</lastmod>
-<priority>0.64</priority>
+	<loc>https://memorytestgame.com/memory-match/index-zh.html</loc>
+	<lastmod>2025-04-15T13:02:30+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-<loc>https://memorytestgame.com/memory-game/index-ru.html</loc>
-<lastmod>2025-04-15T09:56:32+00:00</lastmod>
-<priority>0.64</priority>
+	<loc>https://memorytestgame.com/numbermemorytest/index-zh.html</loc>
+	<lastmod>2025-04-15T13:02:30+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-<loc>https://memorytestgame.com/memory-match/index-ru.html</loc>
-<lastmod>2025-04-15T09:56:32+00:00</lastmod>
-<priority>0.64</priority>
+	<loc>https://memorytestgame.com/magic-cards/index-zh.html</loc>
+	<lastmod>2025-04-15T13:02:30+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-<loc>https://memorytestgame.com/numbermemorytest/index-ru.html</loc>
-<lastmod>2025-04-15T09:56:32+00:00</lastmod>
-<priority>0.64</priority>
+	<loc>https://memorytestgame.com/memory-test-game/index-ru.html</loc>
+	<lastmod>2025-04-15T13:02:30+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-<loc>https://memorytestgame.com/magic-cards/index-ru.html</loc>
-<lastmod>2025-04-15T09:56:32+00:00</lastmod>
-<priority>0.64</priority>
+	<loc>https://memorytestgame.com/memory-game/index-ru.html</loc>
+	<lastmod>2025-04-15T13:02:30+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-<loc>https://memorytestgame.com/Halloween-memory/index-ru.html</loc>
-<lastmod>2025-04-15T09:56:32+00:00</lastmod>
-<priority>0.64</priority>
+	<loc>https://memorytestgame.com/memory-match/index-ru.html</loc>
+	<lastmod>2025-04-15T13:02:30+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-<loc>https://memorytestgame.com/memory-test-game/index-hi.html</loc>
-<lastmod>2025-04-15T09:56:33+00:00</lastmod>
-<priority>0.64</priority>
+	<loc>https://memorytestgame.com/numbermemorytest/index-ru.html</loc>
+	<lastmod>2025-04-15T13:02:30+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 <url>
-<loc>https://memorytestgame.com/memory-game/index-hi.html</loc>
-<lastmod>2025-04-15T09:56:33+00:00</lastmod>
-<priority>0.64</priority>
-</url>
-<url>
-<loc>https://memorytestgame.com/memory-match/index-hi.html</loc>
-<lastmod>2025-04-15T09:56:33+00:00</lastmod>
-<priority>0.64</priority>
-</url>
-<url>
-<loc>https://memorytestgame.com/numbermemorytest/index-hi.html</loc>
-<lastmod>2025-04-15T09:56:33+00:00</lastmod>
-<priority>0.64</priority>
-</url>
-<url>
-<loc>https://memorytestgame.com/magic-cards/index-hi.html</loc>
-<lastmod>2025-04-15T09:56:34+00:00</lastmod>
-<priority>0.64</priority>
-</url>
-<url>
-<loc>https://memorytestgame.com/Halloween-memory/index-hi.html</loc>
-<lastmod>2025-04-15T09:56:34+00:00</lastmod>
-<priority>0.64</priority>
-</url>
-<url>
-<loc>https://memorytestgame.com/memory-test-game/index-zh.html</loc>
-<lastmod>2025-04-15T09:56:34+00:00</lastmod>
-<priority>0.64</priority>
-</url>
-<url>
-<loc>https://memorytestgame.com/memory-game/index-zh.html</loc>
-<lastmod>2025-04-15T09:56:34+00:00</lastmod>
-<priority>0.64</priority>
-</url>
-<url>
-<loc>https://memorytestgame.com/memory-match/index-zh.html</loc>
-<lastmod>2025-04-15T09:56:34+00:00</lastmod>
-<priority>0.64</priority>
-</url>
-<url>
-<loc>https://memorytestgame.com/numbermemorytest/index-zh.html</loc>
-<lastmod>2025-04-15T09:56:35+00:00</lastmod>
-<priority>0.64</priority>
-</url>
-<url>
-<loc>https://memorytestgame.com/magic-cards/index-zh.html</loc>
-<lastmod>2025-04-15T09:56:35+00:00</lastmod>
-<priority>0.64</priority>
-</url>
-<url>
-<loc>https://memorytestgame.com/Halloween-memory/index-zh.html</loc>
-<lastmod>2025-04-15T09:56:35+00:00</lastmod>
-<priority>0.64</priority>
+	<loc>https://memorytestgame.com/magic-cards/index-ru.html</loc>
+	<lastmod>2025-04-15T13:02:30+01:00</lastmod>
+	<priority>0.8</priority>
 </url>
 </urlset>
